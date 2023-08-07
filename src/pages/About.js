@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="container padding">
       <div className="col-md-12">
-        <div className="row mx-0">
+        <div className="row mx-0" style="margin-top: 20px;">
           <p>
             En nuestra página web, creemos que cada individuo tiene una voz única y valiosa que merece ser escuchada. Somos una comunidad apasionada de escritores, entusiastas y pensadores que se han unido para compartir conocimientos, experiencias y perspectivas a través de la magia de la escritura. Nuestra misión es fomentar un espacio inclusivo y diverso donde cualquier persona pueda expresarse libremente y encontrar inspiración en cada palabra. Valoramos la creatividad, la originalidad y el respeto mutuo en todos los aspectos de nuestra comunidad en línea.
           </p>
