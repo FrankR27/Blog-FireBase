@@ -40,11 +40,11 @@ const Auth = ({ setActive, setUser }) => {
         setUser(user);
         setActive("home");
       } else {
-        return toast.error("All fields are mandatory to fill");
+        return toast.error("Todos los campos son obligatorios");
       }
     } else {
       if (password !== confirmPassword) {
-        return toast.error("Password don't match");
+        return toast.error("La contraseña no es correcta");
       }
       if (firstName && lastName && email && password) {
         const { user } = await createUserWithEmailAndPassword(
@@ -55,7 +55,7 @@ const Auth = ({ setActive, setUser }) => {
         await updateProfile(user, { displayName: `${firstName} ${lastName}` });
         setActive("home");
       } else {
-        return toast.error("All fields are mandatory to fill");
+        return toast.error("Todos los campos son obligatorios");
       }
     }
     navigate("/");
@@ -134,7 +134,7 @@ const Auth = ({ setActive, setUser }) => {
                   className={`btn ${!signUp ? "btn-sign-in" : "btn-sign-up"}`}
                   type="submit"
                 >
-                  {!signUp ? "Sign-in" : "Sign-up"}
+                  {!signUp ? "Registrarse" : "Iniciar sesión"}
                 </button>
               </div>
             </form>
