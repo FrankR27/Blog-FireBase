@@ -161,7 +161,7 @@ const AddEditBlog = ({ user, setActive }) => {
                 <input
                   type="text"
                   className="form-control input-text-box"
-                  placeholder="Titulo"
+                  placeholder="Título"
                   name="title"
                   value={title}
                   onChange={handleChange}
@@ -175,7 +175,7 @@ const AddEditBlog = ({ user, setActive }) => {
                 />
               </div>
               <div className="col-12 py-3">
-                ¿Es trending blog?
+                ¿Es un blog de tendencia? 
                 <div className="form-check-inline mx-2">
                   <input
                     type="radio"
@@ -237,7 +237,7 @@ const AddEditBlog = ({ user, setActive }) => {
                   type="submit"
                   disabled={progress !== null && progress < 100}
                 >
-                  {id ? "Update" : "Submit"}
+                  {id ? "Actualizar" : "Subir"}
                 </button>
               </div>
             </form>

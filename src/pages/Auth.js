@@ -78,7 +78,7 @@ const Auth = ({ setActive, setUser }) => {
                     <input
                       type="text"
                       className="form-control input-text-box"
-                      placeholder="First Name"
+                      placeholder="Nombre"
                       name="firstName"
                       value={firstName}
                       onChange={handleChange}
@@ -88,7 +88,7 @@ const Auth = ({ setActive, setUser }) => {
                     <input
                       type="text"
                       className="form-control input-text-box"
-                      placeholder="Last Name"
+                      placeholder="Apellido"
                       name="lastName"
                       value={lastName}
                       onChange={handleChange}
@@ -100,7 +100,7 @@ const Auth = ({ setActive, setUser }) => {
                 <input
                   type="email"
                   className="form-control input-text-box"
-                  placeholder="Email"
+                  placeholder="Correo"
                   name="email"
                   value={email}
                   onChange={handleChange}
@@ -110,7 +110,7 @@ const Auth = ({ setActive, setUser }) => {
                 <input
                   type="password"
                   className="form-control input-text-box"
-                  placeholder="Password"
+                  placeholder="Contraseña"
                   name="password"
                   value={password}
                   onChange={handleChange}
@@ -121,7 +121,7 @@ const Auth = ({ setActive, setUser }) => {
                   <input
                     type="password"
                     className="form-control input-text-box"
-                    placeholder="Confirm Password"
+                    placeholder="Confirmar Contraseña"
                     name="confirmPassword"
                     value={confirmPassword}
                     onChange={handleChange}
@@ -149,7 +149,7 @@ const Auth = ({ setActive, setUser }) => {
                         style={{ textDecoration: "none", cursor: "pointer" }}
                         onClick={() => setSignUp(true)}
                       >
-                        Registrarte 
+                        Registrate 
                       </span>
                     </p>
                   </div>

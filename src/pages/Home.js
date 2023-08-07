@@ -229,7 +229,7 @@ const Home = ({ setActive, user, active }) => {
 
             {!hide && (
               <button className="btn btn-primary" onClick={fetchMore}>
-                Cargar mas
+                Cargar más
               </button>
             )}
           </div>
@@ -237,7 +237,7 @@ const Home = ({ setActive, user, active }) => {
             <Search search={search} handleChange={handleChange} />
             <div className="blog-heading text-start py-2 mb-4">Tags</div>
             <Tags tags={tags} />
-            <FeatureBlogs title={"Mas populares"} blogs={blogs} />
+            <FeatureBlogs title={"Más populares"} blogs={blogs} />
             <Category catgBlogsCount={categoryCount} />
           </div>
         </div>

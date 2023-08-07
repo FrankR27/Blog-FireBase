@@ -6,23 +6,19 @@ const About = () => {
       <div className="col-md-12">
         <div className="row mx-0">
           <p>
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old. Richard McClintock, a Latin professor
-            at Hampden-Sydney College in Virginia, looked up one of the more
-            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-            going through the cites of the word in classical literature,
-            discovered the undoubtable source. Lorem Ipsum comes from sections
-            1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
-            of Good and Evil) by Cicero, written in 45 BC. This book is a
-            treatise on the theory of ethics, very popular during the
-            Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
-            amet..", comes from a line in section 1.10.32. The standard chunk of
-            Lorem Ipsum used since the 1500s is reproduced below for those
-            interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
-            Malorum" by Cicero are also reproduced in their exact original form,
-            accompanied by English versions from the 1914 translation by H.
-            Rackham.
+          En nuestra página web, creemos que cada individuo tiene una voz única y valiosa que merece ser escuchada. Somos una comunidad apasionada de escritores, entusiastas y pensadores que se han unido para compartir conocimientos, experiencias y perspectivas a través de la magia de la escritura.
+
+Nuestra misión es fomentar un espacio inclusivo y diverso donde cualquier persona pueda expresarse libremente y encontrar inspiración en cada palabra. Valoramos la creatividad, la originalidad y el respeto mutuo en todos los aspectos de nuestra comunidad en línea.
+
+¿Qué encontrarás aquí? Un variado y emocionante abanico de blogs escritos por mentes brillantes de todo el mundo. Desde consejos prácticos para el día a día, hasta profundos análisis sobre temas de actualidad, nuestro contenido abarca una amplia gama de temas para satisfacer todos los intereses.
+
+Nuestros colaboradores son el corazón de esta comunidad. Cada blog es una ventana a las experiencias, opiniones y saberes únicos de nuestros escritores. Queremos empoderar a nuestros autores para que compartan su conocimiento y pasión con una audiencia global ávida de aprender, reflexionar y crecer juntos.
+
+¿Por qué elegirnos? Nos enorgullecemos de ofrecer una plataforma fácil de usar y navegar, lo que permite a nuestros visitantes sumergirse en un mar de contenido cautivador sin complicaciones. Nuestro equipo trabaja arduamente para garantizar que la calidad de cada publicación sea excepcional, brindando a nuestros lectores una experiencia enriquecedora y gratificante.
+
+Nos comprometemos a mantener un ambiente seguro y respetuoso para todos nuestros usuarios. Valoramos la diversidad de opiniones y perspectivas y esperamos que cada interacción en nuestro sitio web sea constructiva y enriquecedora.
+
+Así que si eres un lector ávido en busca de nuevas ideas, un escritor apasionado que busca una plataforma para compartir tus pensamientos o simplemente alguien curioso en busca de inspiración, te invitamos a unirte a nuestra comunidad. Juntos, crearemos un espacio donde las palabras se convierten en herramientas poderosas para el cambio, la conexión y el crecimiento personal.
           </p>
         </div>
       </div>
