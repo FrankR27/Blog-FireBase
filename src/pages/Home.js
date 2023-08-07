@@ -107,7 +107,7 @@ const Home = ({ setActive, user, active }) => {
       setBlogs((blogs) => [...blogs, ...blogsData]);
       setLastVisible(docSnapshot.docs[docSnapshot.docs.length - 1]);
     } else {
-      toast.info("No more blog to display");
+      toast.info("No hay mas blogs para mostrar");
       setHide(true);
     }
   };
@@ -161,11 +161,11 @@ const Home = ({ setActive, user, active }) => {
   }
 
   const handleDelete = async (id) => {
-    if (window.confirm("Are you sure wanted to delete that blog ?")) {
+    if (window.confirm("¿Estás seguro de que quieres borrar el blog?")) {
       try {
         setLoading(true);
         await deleteDoc(doc(db, "blogs", id));
-        toast.success("Blog deleted successfully");
+        toast.success("Blog eliminado correctamente");
         setLoading(false);
       } catch (err) {
         console.log(err);
@@ -176,7 +176,7 @@ const Home = ({ setActive, user, active }) => {
   const handleChange = (e) => {
     const { value } = e.target;
     if (isEmpty(value)) {
-      console.log("test");
+      console.log("Probando");
       getBlogs();
       setHide(false);
     }
@@ -201,7 +201,7 @@ const Home = ({ setActive, user, active }) => {
     };
   });
 
-  console.log("categoryCount", categoryCount);
+  console.log("Cantidad categorias", categoryCount);
 
   return (
     <div className="container-fluid pb-4 pt-4 padding">
@@ -209,11 +209,11 @@ const Home = ({ setActive, user, active }) => {
         <div className="row mx-0">
           <Trending blogs={trendBlogs} />
           <div className="col-md-8">
-            <div className="blog-heading text-start py-2 mb-4">Daily Blogs</div>
+            <div className="blog-heading text-start py-2 mb-4">Blogs diarios</div>
             {blogs.length === 0 && location.pathname !== "/" && (
               <>
                 <h4>
-                  No Blog found with search keyword:{" "}
+                  No se ha encontrado ningún blog con la búsqueda:{" "}
                   <strong>{searchQuery}</strong>
                 </h4>
               </>
@@ -229,7 +229,7 @@ const Home = ({ setActive, user, active }) => {
 
             {!hide && (
               <button className="btn btn-primary" onClick={fetchMore}>
-                Load More
+                Cargar mas
               </button>
             )}
           </div>
@@ -237,7 +237,7 @@ const Home = ({ setActive, user, active }) => {
             <Search search={search} handleChange={handleChange} />
             <div className="blog-heading text-start py-2 mb-4">Tags</div>
             <Tags tags={tags} />
-            <FeatureBlogs title={"Most Popular"} blogs={blogs} />
+            <FeatureBlogs title={"Mas populares"} blogs={blogs} />
             <Category catgBlogsCount={categoryCount} />
           </div>
         </div>

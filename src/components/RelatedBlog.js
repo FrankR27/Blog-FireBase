@@ -5,13 +5,13 @@ const RelatedBlog = ({ blogs, id }) => {
   return (
     <div>
       <div className="blog-heading text-start pt-3 py-2 mb-4">
-        Related Blogs
+        Blogs relacionados
       </div>
       <div className="col-md-12 text-left justify-content-center">
         <div className="row gx-5">
           {blogs.length === 1 && (
             <h5 className="text-center">
-              Related Blogs not found with this current blog
+              No se han encontrado blogs relacionados con este blog.
             </h5>
           )}
           {blogs

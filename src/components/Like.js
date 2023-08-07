@@ -44,7 +44,7 @@ const Like = ({ handleLike, likes, userId }) => {
             className="btn btn-primary"
             data-bs-toggle="tooltip"
             data-bs-placement="top"
-            title="Please Login to like post"
+            title="Por favor inicia sesión para darle like a la publicación"
           >
             <LikeStatus />
           </button>
