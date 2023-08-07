@@ -15,14 +15,14 @@ const Search = ({ search, handleChange }) => {
 
   return (
     <div>
-      <div className="blog-heading text-start py-2 mb-4">Search</div>
+      <div className="blog-heading text-start py-2 mb-4">Buscar</div>
       <form className="form-inline" onSubmit={handleSubmit}>
         <div className="col-12 py-3">
           <input
             type="text"
             value={search}
             className="form-control search-input"
-            placeholder="Search blog"
+            placeholder="Buscar blog"
             onChange={handleChange}
           />
         </div>

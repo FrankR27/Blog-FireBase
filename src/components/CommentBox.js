@@ -17,9 +17,9 @@ const CommentBox = ({ userId, userComment, setUserComment, handleComment }) => {
       </form>
       {!userId ? (
         <>
-          <h5>Please login or Create an account to post comment</h5>
+          <h5>Inicie sesión o cree una cuenta para enviar un comentario</h5>
           <button className="btn btn-success" onClick={() => navigate("/auth")}>
-            Login
+            Iniciar sesión
           </button>
         </>
       ) : (
@@ -29,7 +29,7 @@ const CommentBox = ({ userId, userComment, setUserComment, handleComment }) => {
             type="submit"
             onClick={handleComment}
           >
-            Post Comment
+            Publicar comentario
           </button>
         </>
       )}

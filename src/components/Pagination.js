@@ -10,7 +10,7 @@ const Pagination = ({ currentPage, handlePageChange, noOfPages }) => {
             disabled={currentPage === 1}
             onClick={() => handlePageChange("Prev")}
           >
-            <i className="fa fa-long-arrow-left"></i>&nbsp;&nbsp;Prev
+            <i className="fa fa-long-arrow-left"></i>&nbsp;&nbsp;Anterior
           </button>
           <span className="btn_pagging">{currentPage}</span>
           <button
@@ -18,7 +18,7 @@ const Pagination = ({ currentPage, handlePageChange, noOfPages }) => {
             disabled={currentPage === noOfPages}
             onClick={() => handlePageChange("Next")}
           >
-            Next <i className="fa fa-long-arrow-right"></i>&nbsp;&nbsp;
+            Siguiente <i className="fa fa-long-arrow-right"></i>&nbsp;&nbsp;
           </button>
         </div>
       </div>

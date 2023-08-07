@@ -14,7 +14,7 @@ const Card = ({ title, description, imgUrl, id, likes, comments }) => {
           </p>
           <div className="d-flex justify-content-between">
             <Link to={`/detail/${id}`} style={{ textDecoration: "none" }}>
-              <span className="text-primary">Read More</span>
+              <span className="text-primary">Leer más</span>
             </Link>
             <div>
               <i className="bi bi-hand-thumbs-up m-2" />
