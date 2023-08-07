@@ -66,7 +66,7 @@ const Auth = ({ setActive, setUser }) => {
       <div className="container">
         <div className="col-12 text-center">
           <div className="text-center heading py-2">
-            {!signUp ? "Sign-In" : "Sign-Up"}
+            {!signUp ? "Iniciar sesión" : "Registrarse"}
           </div>
         </div>
         <div className="row h-100 justify-content-center align-items-center">
@@ -143,13 +143,13 @@ const Auth = ({ setActive, setUser }) => {
                 <>
                   <div className="text-center justify-content-center mt-2 pt-2">
                     <p className="small fw-bold mt-2 pt-1 mb-0">
-                      Don't have an account ?&nbsp;
+                     ¿No tienes una cuenta?&nbsp;
                       <span
                         className="link-danger"
                         style={{ textDecoration: "none", cursor: "pointer" }}
                         onClick={() => setSignUp(true)}
                       >
-                        Sign Up
+                        Registrarte 
                       </span>
                     </p>
                   </div>
@@ -158,7 +158,7 @@ const Auth = ({ setActive, setUser }) => {
                 <>
                   <div className="text-center justify-content-center mt-2 pt-2">
                     <p className="small fw-bold mt-2 pt-1 mb-0">
-                      Already have an account ?&nbsp;
+                     ¿Ya tienes una cuenta?&nbsp;
                       <span
                         style={{
                           textDecoration: "none",
@@ -167,7 +167,7 @@ const Auth = ({ setActive, setUser }) => {
                         }}
                         onClick={() => setSignUp(false)}
                       >
-                        Sign In
+                        Iniciar sesión
                       </span>
                     </p>
                   </div>
