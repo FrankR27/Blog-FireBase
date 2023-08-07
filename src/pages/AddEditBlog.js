@@ -71,7 +71,7 @@ const AddEditBlog = ({ user, setActive }) => {
         },
         () => {
           getDownloadURL(uploadTask.snapshot.ref).then((downloadUrl) => {
-            toast.info("Image upload to firebase successfully");
+            toast.info("Imagen subida a firebase con éxito");
             setForm((prev) => ({ ...prev, imgUrl: downloadUrl }));
           });
         }
@@ -122,7 +122,7 @@ const AddEditBlog = ({ user, setActive }) => {
             author: user.displayName,
             userId: user.uid,
           });
-          toast.success("Blog created successfully");
+          toast.success("Blog creado con éxito");
         } catch (err) {
           console.log(err);
         }
@@ -134,13 +134,13 @@ const AddEditBlog = ({ user, setActive }) => {
             author: user.displayName,
             userId: user.uid,
           });
-          toast.success("Blog updated successfully");
+          toast.success("Blog actualizado correctamente");
         } catch (err) {
           console.log(err);
         }
       }
     } else {
-      return toast.error("All fields are mandatory to fill");
+      return toast.error("Todos los campos son obligatorios");
     }
 
     navigate("/");
@@ -151,7 +151,7 @@ const AddEditBlog = ({ user, setActive }) => {
       <div className="container">
         <div className="col-12">
           <div className="text-center heading py-2">
-            {id ? "Update Blog" : "Create Blog"}
+            {id ? "Actualizar Blog" : "Crear Blog"}
           </div>
         </div>
         <div className="row h-100 justify-content-center align-items-center">
@@ -161,7 +161,7 @@ const AddEditBlog = ({ user, setActive }) => {
                 <input
                   type="text"
                   className="form-control input-text-box"
-                  placeholder="Title"
+                  placeholder="Titulo"
                   name="title"
                   value={title}
                   onChange={handleChange}
@@ -170,12 +170,12 @@ const AddEditBlog = ({ user, setActive }) => {
               <div className="col-12 py-3">
                 <ReactTagInput
                   tags={tags}
-                  placeholder="Tags"
+                  placeholder="Etiquetas"
                   onChange={handleTags}
                 />
               </div>
               <div className="col-12 py-3">
-                <p className="trending">Is it trending blog ?</p>
+                ¿Es trending blog?
                 <div className="form-check-inline mx-2">
                   <input
                     type="radio"
@@ -186,7 +186,7 @@ const AddEditBlog = ({ user, setActive }) => {
                     onChange={handleTrending}
                   />
                   <label htmlFor="radioOption" className="form-check-label">
-                    Yes&nbsp;
+                    Si&nbsp;
                   </label>
                   <input
                     type="radio"
@@ -207,7 +207,7 @@ const AddEditBlog = ({ user, setActive }) => {
                   onChange={onCategoryChange}
                   className="catg-dropdown"
                 >
-                  <option>Please select category</option>
+                  <option>Seleccione una categoría</option>
                   {categoryOption.map((option, index) => (
                     <option value={option || ""} key={index}>
                       {option}
@@ -218,7 +218,7 @@ const AddEditBlog = ({ user, setActive }) => {
               <div className="col-12 py-3">
                 <textarea
                   className="form-control description-box"
-                  placeholder="Description"
+                  placeholder="Descripción"
                   value={description}
                   name="description"
                   onChange={handleChange}
