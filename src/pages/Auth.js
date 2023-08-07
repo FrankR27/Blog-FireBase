@@ -134,7 +134,7 @@ const Auth = ({ setActive, setUser }) => {
                   className={`btn ${!signUp ? "btn-sign-in" : "btn-sign-up"}`}
                   type="submit"
                 >
-                  {!signUp ? "Registrarse" : "Iniciar sesión"}
+                  {!signUp ? "Iniciar sesión" : "Registrarse"}
                 </button>
               </div>
             </form>
