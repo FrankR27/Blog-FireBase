@@ -235,7 +235,7 @@ const Home = ({ setActive, user, active }) => {
           </div>
           <div className="col-md-3">
             <Search search={search} handleChange={handleChange} />
-            <div className="blog-heading text-start py-2 mb-4">Tags</div>
+            <div className="blog-heading text-start py-2 mb-4">Etiquetas</div>
             <Tags tags={tags} />
             <FeatureBlogs title={"Más populares"} blogs={blogs} />
             <Category catgBlogsCount={categoryCount} />

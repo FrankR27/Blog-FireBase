@@ -149,7 +149,7 @@ const Auth = ({ setActive, setUser }) => {
                         style={{ textDecoration: "none", cursor: "pointer" }}
                         onClick={() => setSignUp(true)}
                       >
-                        Registrate 
+                        Regístrate 
                       </span>
                     </p>
                   </div>

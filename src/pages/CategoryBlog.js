@@ -37,7 +37,7 @@ const CategoryBlog = ({ setActive }) => {
       <div className="container">
         <div className="row">
           <div className="blog-heading text-center py-2 mb-4">
-            Categoria: <strong>{category.toLocaleUpperCase()}</strong>
+            Categoría: <strong>{category.toLocaleUpperCase()}</strong>
           </div>
           {categoryBlogs?.map((item) => (
             <div className="col-md-6">
