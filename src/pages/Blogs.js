@@ -105,7 +105,7 @@ const Blogs = ({setActive}) => {
     <div>
       <div className="container">
         <div className="row">
-          <div className="blog-heading text-center py-2 mb-4">Daily Blogs</div>
+          <div className="blog-heading text-center py-2 mb-4">Blogs cotidianos</div>
           {blogs?.map((blog) => (
             <div className="col-md-6" key={blog.id}>
               <BlogSection {...blog} />
